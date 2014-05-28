@@ -35,8 +35,9 @@ $(function() {
 
 
     for (var i = highlights.length - 1; i >= 0; i--) {
-      if(highlights[i].indexOf('-')) { // a range like 3-5
+      if(highlights[i].indexOf('-') != -1) { // a range like 3-5
         var range = highlights[i].split('-');
+        console.log('range',range);
 
         $('pre li:nth-child(n+' + range[0] + '):nth-child(-n+' + range[1] + ')' ).attr('style', 'background-color:#555;'); 
         
