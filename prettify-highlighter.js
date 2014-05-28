@@ -19,8 +19,6 @@
 })(window.jQuery);
 
 
-
-
 $(function() {
   var highlights = $('code').attr('lines');
   $('code').addClass('prettyprint linenums'); 
