@@ -1,10 +1,4 @@
 
-
-
-
-
-
-
 (function($) {
   $.fn.replaceTagName = function(replaceWith) {
     var tags = [],
@@ -59,7 +53,7 @@ var color = getScriptParams('prettify-highlighter.js')['highlight-color'];
 if(color[0]!='#') {
   color = '#' + color;
 }
-console.log(color);
+
 
 var highlights = $('code').attr('lines');
 $('code').addClass('prettyprint linenums'); 
